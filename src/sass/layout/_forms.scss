@@ -1,0 +1,27 @@
+.letter-email {
+  max-width: 512px;
+  width: 100%;
+  position: relative;
+}
+
+.enter-email {
+  background-color: rgba($main-color, 0.3);
+  max-width: 396px;
+  width: 100%;
+  font-family: $heading-font;
+  color: $main-color;
+  @include menu-font;
+  display: block;
+  float: left;
+  padding: 20px 80px 18px 36px;
+  border-radius: 30px;
+  border: 1px solid rgba($main-color, 0.6);
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.email-button {
+  position: absolute;
+  right: 0;
+  border: none;
+}

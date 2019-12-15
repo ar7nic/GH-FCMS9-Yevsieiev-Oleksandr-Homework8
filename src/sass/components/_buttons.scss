@@ -1,0 +1,24 @@
+.buttons {
+  display: inline-block;
+  padding: 20px 60px;
+  margin: 0 auto;
+  text-decoration: none;
+  cursor: pointer;
+  @include menu-font;
+  font-family: $heading-font;
+  color: $content-text-color;
+  border-radius: 30px;
+  background-color: $main-color;
+  &:hover {
+    color: $main-color;
+    background-color: $secondary-color;
+  }
+}
+
+.sign-up {
+  .marked-btn {
+    &:hover {
+      background-color: $ad-color;
+    }
+  }
+}

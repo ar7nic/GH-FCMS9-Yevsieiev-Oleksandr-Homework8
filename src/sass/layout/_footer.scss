@@ -1,0 +1,25 @@
+.fifth-section {
+  background: url("../img/second_bg.jpg") center no-repeat;
+  background-size: cover;
+  color: $main-color;
+}
+
+.logo-symu {
+  color: $main-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0;
+}
+
+.down {
+  padding-bottom: 200px;
+}
+
+.up {
+  padding-top: 30px;
+}

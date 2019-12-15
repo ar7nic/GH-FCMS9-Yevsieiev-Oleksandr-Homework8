@@ -1,0 +1,182 @@
+.clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.center-text {
+  text-align: center;
+  padding: 30px 0;
+  margin: 10px 0 0 0;
+}
+
+.links {
+  text-decoration: none;
+  cursor: pointer;
+  color: $content-text-color;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.first {
+  background: url("../img/first_bg.jpg") center no-repeat;
+  background-size: cover;
+  color: $main-color;
+  .main-text {
+    margin: 0 auto;
+    font-family: $heading-font;
+    @include first-heading-font;
+    .small-main-text {
+      display: block;
+      @include heading-font;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+  .first-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+.examples {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  h3 {
+    @include heading-font;
+    font-family: $heading-font;
+  }
+  p {
+    @include content-font;
+    font-family: $content-text-font;
+    padding-bottom: 20px;
+  }
+  h4 {
+    @include heading-medium-font;
+    font-family: $heading-font;
+  }
+}
+
+.preview {
+  border: 7px solid $main-color;
+  border-radius: 50%;
+}
+
+.second-section {
+  background-color: #edeff1;
+  h3 {
+    padding: 20px 0;
+    display: block;
+    @include heading-font;
+    font-family: $heading-font;
+  }
+}
+
+.photo {
+  max-width: 310px;
+  width: 100%;
+}
+
+.letter {
+  background: url("../img/second_bg.jpg") center no-repeat;
+  background-size: cover;
+  color: $main-color;
+  h3 {
+    padding: 20px 0;
+    display: block;
+    @include heading-font;
+    font-family: $heading-font;
+  }
+  p {
+    @include content-font;
+    font-family: $content-text-font;
+    padding-bottom: 20px;
+  }
+}
+
+.mailbox {
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.third-section {
+  background-color: $main-color;
+}
+
+.sign-photo {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $ad-text-color;
+  h3 {
+    font-family: $heading-font;
+    @include heading-font
+  }
+  P {
+    font-family: $content-text-font;
+    @include content-font;
+  }
+  .first-photo {
+    display: inline-block;
+    max-width: 520px;
+    width: 100%;
+  }
+  .sign-up {
+    padding: 0 20px;
+    max-width: 520px;
+    width: 100%;
+  }
+  &.first-sign {
+    flex-direction: row-reverse;
+  }
+}
+
+.fourth-section {
+  background-color: $secondary-color;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-list-item {
+  list-style-type: none;
+  line-height: 36px;
+}
+
+.down-menu {
+  text-decoration: none;
+  cursor: pointer;
+  @include menu-font;
+  font-family: $content-text-font;
+  color: $main-color;
+}
+
+.three-list {
+  max-width: 200px;
+  width: 100%;
+}
+
+.marg {
+  margin-bottom: 20px;
+}

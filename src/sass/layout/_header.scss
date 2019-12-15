@@ -1,0 +1,45 @@
+.logo {
+  display: inline-block;
+  margin: 0;
+}
+
+.main-menu {
+  background: $main-color;
+}
+
+.head-menu {
+  float: right;
+  display: inline-block;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items {
+  display: none;
+}
+
+@media (min-width: 850px){
+  .menu-items {
+    display: inline-block;
+    padding-top: 20px;
+    .links {
+      text-decoration: none;
+      cursor: pointer;
+      @include menu-font;
+      font-family: $heading-font;
+      color: $content-text-color;
+      padding: 17px 20px;
+      border-radius: 30px;
+      &:hover {
+        color: $main-color;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+
+
